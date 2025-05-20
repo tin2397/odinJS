@@ -34,7 +34,15 @@
     </div>
 
     <div id="books-container"></div>
+    
+    <!-- Add Thank You Dialog -->
+    <dialog id="thank-you-dialog">
+        <h2>Thank You!</h2>
+        <p>Your book has been added to the library.</p>
+        <button onclick="this.closest('dialog').close()">Close</button>
+    </dialog>
 
     <script src="script.js"></script>
 </body>
 </html>
+

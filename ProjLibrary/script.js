@@ -46,6 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
         renderBooks();
         formContainer.style.display = 'none';
         addBookForm.reset();
+        
+        // Show thank you dialog
+        const thankYouDialog = document.getElementById('thank-you-dialog');
+        /*showModal will block all other actions until the dialog is closed*/
+        /*show will not block other actions*/
+        thankYouDialog.showModal();
     });
 }); 
 
